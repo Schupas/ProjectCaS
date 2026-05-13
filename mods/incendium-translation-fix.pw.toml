@@ -1,0 +1,13 @@
+name = "Incendium Translation Fix"
+filename = "incendium_translation_fix_1.21.x_1.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d13190711690f2089318421e46a92d792ceea6b3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7381409
+project-id = 1411989

@@ -1,0 +1,601 @@
+---- Minecraft Network Protocol Error Report ----
+
+// Hi. I'm Connector, and I'm a crashaholic
+=========================
+SINYTRA CONNECTOR IS PRESENT!
+Please verify issues are not caused by Connector before reporting them to mod authors.
+If you're unsure, file a report on Connector's issue tracker found at https://github.com/Sinytra/Connector/issues.
+=========================
+
+
+// I'm sorry, I don't speak that language
+
+Time: 2026-04-17 19:26:34
+Description: Packet handling error
+
+io.netty.handler.codec.DecoderException: Failed to decode packet 'clientbound/minecraft:cookie_request'
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.IdDispatchCodec.decode(IdDispatchCodec.java:38) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.IdDispatchCodec.decode(IdDispatchCodec.java:14) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.PacketDecoder.redirect$zzl000$connectivity$checkDecodingError(PacketDecoder.java:558) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,re:computing_frames,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:connectivity.mixins.json:PacketDecoderMixin from mod connectivity,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.PacketDecoder.decode(PacketDecoder.java:31) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,re:computing_frames,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:connectivity.mixins.json:PacketDecoderMixin from mod connectivity,pl:mixin:A,pl:connector_pre_launch:A}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:164) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {re:mixin}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23139!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23139!/:4.1.97.Final] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+Caused by: net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: {\"text\":\"\u00A77Hello \u00A7aSchupas\u00A77!\\n\u00A78You are trying to connect to collisider.schupas.com.\\n\\n\u00A77Unfortunately, you have to use a \u00A7adifferent address\u00A77 to connect to the server.\\n\u00A77Try to connect using this address:\\n\\n\u00A78\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\\n\u00A7acollisider.schupas.com\u00A76:38810\\n\u00A7r\u00A78\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\\n\\n\u00A77Make sure to include both, the \u00A7aaddress\u00A77 and the \u00A76port\u00A77 at the end of the address.\\n\u00A77For a full explanation and potential solutions, read our article here: \u00A7bexaroton.com/connect\"}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidNamespace(ResourceLocation.java:263) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:continuity.mixins.json:IdentifierMixin from mod continuity,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.createUntrusted(ResourceLocation.java:48) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:continuity.mixins.json:IdentifierMixin from mod continuity,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:79) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:continuity.mixins.json:IdentifierMixin from mod continuity,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:continuity.mixins.json:IdentifierMixin from mod continuity,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.FriendlyByteBuf.readResourceLocation(FriendlyByteBuf.java:567) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:connectivity.mixins.json:FriendlyByteBufLimitMixin from mod connectivity,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.cookie.ClientboundCookieRequestPacket.<init>(ClientboundCookieRequestPacket.java:15) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.StreamCodec$2.decode(StreamCodec.java:37) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.StreamCodec$5.decode(StreamCodec.java:91) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.StreamCodec$5.decode(StreamCodec.java:87) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.codec.IdDispatchCodec.decode(IdDispatchCodec.java:36) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	... 40 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Netty Client IO #9
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.PacketListener.fillCrashReport(PacketListener.java:33) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A,re:mixin,pl:connector_pre_launch:A}
+-- Connection --
+Details:
+	Protocol: configuration
+	Flow: CLIENTBOUND
+	Server type: OTHER
+	Server brand: ~~NULL~~
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.PacketListener.fillCrashReport(PacketListener.java:33) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:classloading,pl:connector_pre_launch:A,re:mixin,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.PacketUtils.fillCrashReport(PacketUtils.java:62) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:connectivity.mixins.json:PacketUtilsMixin from mod connectivity,pl:mixin:A,pl:connector_pre_launch:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl.storeDisconnectionReport(ClientCommonPacketListenerImpl.java:130) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:fabric-networking-api-v1.client.mixins.json:ClientCommonNetworkHandlerMixin from mod fabric_networking_api_v1,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl.createDisconnectionInfo(ClientCommonPacketListenerImpl.java:123) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:fabric-networking-api-v1.client.mixins.json:ClientCommonNetworkHandlerMixin from mod fabric_networking_api_v1,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.Connection.exceptionCaught(Connection.java:157) ~[client-1.21.1-20240808.144430-srg.jar%23315!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:447) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:164) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.codec@4.1.97.Final/io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.97.Final.jar%23138!/:4.1.97.Final] {re:mixin,re:computing_frames}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.handler@4.1.97.Final/io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[netty-handler-4.1.97.Final.jar%23140!/:4.1.97.Final] {re:mixin}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar%23144!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23139!/:4.1.97.Final] {}
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23139!/:4.1.97.Final] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+
+
+-- Dynamic Lighting --
+Details:
+	Description: This section contains information related to dynamic lighting, this may not be related to your crash.
+	Mode: fancy
+	Dynamic Light Sources: 0
+	Spatial Hash Occupancy: 0 / 1024
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.7, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 1262485504 bytes (1204 MiB) / 3210739712 bytes (3062 MiB) up to 10737418240 bytes (10240 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 9800X3D 8-Core Processor           
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 4.70
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 5080
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 16303.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.9621
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc.
+	Graphics card #1 VRAM (MiB): 512.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.11024.2
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 37788.54
+	Virtual memory used (MiB): 21681.49
+	Swap memory total (MiB): 5888.00
+	Swap memory used (MiB): 115.57
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 122380.48, total: 1906865.00
+	Space in storage for workdir (MiB): available: 122380.48, total: 1906865.00
+	JVM Flags: 5 total; -XX:+UseZGC -XX:+ZGenerational -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx10240m
+	Loaded Shaderpack: ComplementaryUnbound_r5.7.1.zip
+		Profile: VERYHIGH (+0 options changed by user)
+	Yumi MC Core: 1.0.0-beta.1+1.21.1
+	Mods: 
+		ae2: Applied Energistics 2 v19.2.17
+		ali: AdvancedLootInfo v1.9.0
+		ambientsounds: AmbientSounds v6.3.3
+		apotheosis: Apotheosis v8.5.2
+		apothic_attributes: Apothic Attributes v2.9.1
+		apothic_enchanting: Apothic Enchanting v1.5.2
+		apothic_spawners: Apothic Spawners v1.3.4
+		appleskin: AppleSkin v3.0.9+mc1.21
+		appmek: Applied Mekanistics v1.6.3
+		aquaculture: Aquaculture 2 v2.7.21
+		attributefix: AttributeFix v21.1.3
+		balm: Balm v21.0.56
+		bellsandwhistles: Create: Bells & Whistles v0.4.7-1.21.1
+		betterfortresses: YUNG's Better Nether Fortresses v1.21.1-NeoForge-3.1.5
+		betterjungletemples: YUNG's Better Jungle Temples v1.21.1-NeoForge-3.1.2
+		bettermineshafts: YUNG's Better Mineshafts v1.21.1-NeoForge-5.1.1
+		betteroceanmonuments: YUNG's Better Ocean Monuments v1.21.1-NeoForge-4.1.2
+		betterstrongholds: YUNG's Better Strongholds v1.21.1-NeoForge-5.1.3
+		betterwitchhuts: YUNG's Better Witch Huts v1.21.1-NeoForge-4.1.1
+		biomesoplenty: Biomes O' Plenty v21.1.0.13
+		biomeswevegone: Oh The Biomes We've Gone v2.5.5
+		bookshelf: Bookshelf v21.1.81
+		buildinggadgets2: Building Gadgets 2 v1.3.9
+		caelus: Caelus API v7.0.1+1.21.1
+		chefsdelight: Chefs Delight v1.0.5
+		cloth_config: Cloth Config v15 API v15.0.140
+		clumps: Clumps v19.0.0.1
+		connectivity: Connectivity Mod v7.6
+		connector: Sinytra Connector v2.0.0-beta.14+1.21.1
+		continuity: Continuity v3.0.0+1.21.neoforge
+		controlling: Controlling v19.0.5
+		cookingforblockheads: Cooking for Blockheads v21.1.20
+		corgilib: CorgiLib v5.0.0.9
+		create: Create v6.0.9
+		create_jetpack: Create Jetpack v5.1.2
+		create_train_fuel_config: Create Train Fuel Config v0.1.0
+		createaddition: Create Crafts & Additions v1.5.10
+		createappliedkinetics: Create: Applied Kinetics v1.5.4-1.21.1
+		createoplenty: Create O' Plenty v3.0
+		createthreadedtrains: Create: Threaded Trains v1.0.0
+		creativecore: CreativeCore v2.13.36
+		cucumber: Cucumber Library v8.0.15
+		cupboard: Cupboard mod v3.5
+		curios: Curios API v9.5.1+1.21.1
+		distanthorizons: Distant Horizons v2.4.5-b
+		elytraslot: Elytra Slot v9.0.2+1.21.1
+		emi: EMI v1.1.22+1.21.1+neoforge
+		emi_enchanting: EMI Enchanting v0.1.2+1.21+neoforge
+		emi_loot: EMI Loot v0.7.9+1.21+neoforge
+		emi_ores: EMI Ores v1.2+1.21.1+neoforge
+		enchdesc: EnchantmentDescriptions v21.1.9
+		extra_mod_integrations: Extra Mod Integrations v1.0.3+1.21.1
+		extra_mod_integrations_actually_additions: ExMI Actually Additions v1.0.3+1.21.1
+		extra_mod_integrations_chipped: ExMI Chipped v1.0.3+1.21.1
+		extra_mod_integrations_core: Extra Mod Integrations Core v1.0.3+1.21.1
+		extra_mod_integrations_farmers_delight: ExMI Farmer's Delight v1.0.3+1.21.1
+		extra_mod_integrations_irons_spellbooks: ExMI Iron's Spells 'n Spellbooks v1.0.3+1.21.1
+		extra_mod_integrations_pneumaticcraft: ExMI PneumaticCraft v1.0.3+1.21.1
+		extra_mod_integrations_rechiseled: ExMI Rechiseled v1.0.3+1.21.1
+		extra_mod_integrations_reliquary: ExMI Reliquary v1.0.3+1.21.1
+		fabric_api: Forgified Fabric API v0.116.7+2.2.4+1.21.1
+		fabric_api_base: Forgified Fabric API Base v0.4.42+d1308ded19
+		fabric_api_lookup_api_v1: Forgified Fabric API Lookup API (v1) v1.6.71+c290471319
+		fabric_biome_api_v1: Forgified Fabric Biome API (v1) v13.0.31+1e62d33c19
+		fabric_block_api_v1: Forgified Fabric Block API (v1) v1.1.0+b0c22bb819
+		fabric_block_view_api_v2: Forgified Fabric BlockView API (v2) v1.0.11+e9036fd419
+		fabric_blockrenderlayer_v1: Forgified Fabric BlockRenderLayer Registration (v1) v1.1.52+c290471319
+		fabric_client_tags_api_v1: Forgified Fabric Client Tags v1.1.15+e053909619
+		fabric_command_api_v2: Forgified Fabric Command API (v2) v2.2.28+36d727be19
+		fabric_content_registries_v0: Forgified Fabric Content Registries (v0) v8.0.19+5e0d320019
+		fabric_convention_tags_v1: Forgified Fabric Convention Tags v2.1.5+7f945d5b19
+		fabric_convention_tags_v2: Forgified Fabric Convention Tags (v2) v2.11.1+87e5848019
+		fabric_data_attachment_api_v1: Forgified Fabric Data Attachment API (v1) v1.4.5+26d408aa19
+		fabric_data_generation_api_v1: Forgified Fabric Data Generation API (v1) v20.2.34+a4c3605619
+		fabric_entity_events_v1: Forgified Fabric Entity Events (v1) v1.8.0+5ede667619
+		fabric_events_interaction_v0: Forgified Fabric Events Interaction (v0) v0.7.13+86e0887119
+		fabric_game_rule_api_v1: Forgified Fabric Game Rule API (v1) v1.0.53+36d727be19
+		fabric_gametest_api_v1: Forgified Fabric Game Test API (v1) v2.0.5+29f188ce19
+		fabric_item_api_v1: Forgified Fabric Item API (v1) v11.2.0+0c57911319
+		fabric_item_group_api_v1: Forgified Fabric Item Group API (v1) v4.1.7+e324903319
+		fabric_key_binding_api_v1: Forgified Fabric Key Binding API (v1) v1.0.47+62cc7ce119
+		fabric_lifecycle_events_v1: Forgified Fabric Lifecycle Events (v1) v2.6.0+e40d8add19
+		fabric_loot_api_v2: Forgified Fabric Loot API (v2) v3.0.15+a3ee712d19
+		fabric_loot_api_v3: Forgified Fabric Loot API (v3) v1.0.3+333dfad919
+		fabric_message_api_v1: Forgified Fabric Message API (v1) v6.0.14+6a754fce19
+		fabric_model_loading_api_v1: Forgified Fabric Model Loading API (v1) v2.1.0+6e8f52c719
+		fabric_networking_api_v1: Forgified Fabric Networking API (v1) v4.3.0+30a980d919
+		fabric_object_builder_api_v1: Forgified Fabric Object Builder API (v1) v15.2.1+cc242efd19
+		fabric_particles_v1: Forgified Fabric Particles (v1) v4.0.2+824f924c19
+		fabric_recipe_api_v1: Forgified Fabric Recipe API (v1) v5.0.15+59440bcc19
+		fabric_registry_sync_v0: Forgified Fabric Registry Sync (v0) v5.3.1+f9aace1619
+		fabric_renderer_api_v1: Forgified Fabric Renderer API (v1) v3.4.1+9125b6dc19
+		fabric_renderer_indigo: Forgified Fabric Renderer - Indigo v1.7.1+9125b6dc19
+		fabric_rendering_data_attachment_v1: Forgified Fabric Rendering Data Attachment (v1) v0.3.49+73761d2e19
+		fabric_rendering_fluids_v1: Forgified Fabric Rendering Fluids (v1) v3.1.6+a51883b219
+		fabric_rendering_v1: Forgified Fabric Rendering (v1) v5.1.0+1a09bd5a19
+		fabric_resource_conditions_api_v1: Forgified Fabric Resource Conditions API (v1) v4.3.0+5bdd099819
+		fabric_resource_loader_v0: Forgified Fabric Resource Loader (v0) v1.3.1+4ea8954419
+		fabric_screen_api_v1: Forgified Fabric Screen API (v1) v2.0.25+0ae1214819
+		fabric_screen_handler_api_v1: Forgified Fabric Screen Handler API (v1) v1.3.90+8dbc56dd19
+		fabric_sound_api_v1: Forgified Fabric Sound API (v1) v1.0.23+10b84f8419
+		fabric_transfer_api_v1: Forgified Fabric Transfer API (v1) v5.4.3+a25cb45619
+		fabric_transitive_access_wideners_v1: Forgified Fabric Transitive Access Wideners (v1) v6.2.0+6c854b6f19
+		fancymenu: FancyMenu v3.8.1
+		farmersdelight: Farmer's Delight v1.2.11
+		fcbop: Farmer's Cutting: Biomes O' Plenty v2.0.0
+		ferritecore: Ferrite Core v7.0.3
+		flightlib: Flight Lib v3.2.1
+		flywheel: Flywheel v1.0.6
+		forgified_fabric_api: Forgified Fabric API (dummy) v0.116.7+2.2.4+1.21.1
+		fzzy_config: Fzzy Config v0.7.6+1.21+neoforge
+		geckolib: GeckoLib 4 v4.8.4
+		glitchcore: GlitchCore v2.1.0.0
+		guideme: GuideME v21.1.15
+		incendium: Incendium v5.4.3
+		incendium_translation_fix: Incendium Translation Fix v1.0.5
+		interiors: Create: Interiors v0.6.1
+		inventoryprofilesnext: Inventory Profiles Next v2.2.5
+		iris: Iris v1.8.12-snapshot+mc1.21.1-local
+		jade: Jade v15.10.5+neoforge
+		jadeaddons: Jade Addons v6.1.0+neoforge
+		konkrete: Konkrete v1.9.9
+		kotlinforforge: Kotlin For Forge v5.11.0
+		kuma_api: KumaAPI v21.0.7
+		lambdynlights: LambDynamicLights v4.8.7+1.21.1
+		lambdynlights_api: LambDynamicLights (API) v4.8.7+1.21.1
+		lambdynlights_runtime: LambDynamicLights (Runtime) v4.8.7+1.21.1
+		libipn: libIPN v6.6.3
+		lithium: Lithium v0.15.3+mc1.21.1
+		mcwdoors: Macaw's Doors v1.1.5
+		mcwtrpdoors: Macaw's Trapdoors v1.1.5
+		mekanism: Mekanism v10.7.19
+		mekanismadditions: Mekanism: Additions v10.7.19
+		mekanismgenerators: Mekanism: Generators v10.7.19
+		mekanismtools: Mekanism: Tools v10.7.19
+		melody: Melody v1.0.10
+		minecraft: Minecraft v1.21.1
+		moonlight: Moonlight Lib v1.21-2.29.32
+		mousetweaks: Mouse Tweaks v2.26.1
+		mr_farmers_cuttingohthebiomeswevegone: Farmer's Cutting: Oh The Biomes We've Gone v1.21.1-2.1-neoforge
+		mysticalagradditions: Mystical Agradditions v8.0.13
+		mysticalagriculture: Mystical Agriculture v8.0.24
+		naturescompass: Nature's Compass v1.21.1-3.4.0-neoforge
+		neoforge: NeoForge v21.1.224
+		noisium: Noisium v2.7.0+mc1.21-1.21.1
+		notenoughanimations: NotEnoughAnimations v1.12.2
+		notenoughcrashes: Not Enough Crashes v4.4.9+1.21.1
+		nullscape: Nullscape v1.2.14
+		ohthetreesyoullgrow: Oh The Trees You'll Grow v5.3.0
+		ok_zoomer: Ok Zoomer v10.0.0-beta.13
+		openpartiesandclaims: Open Parties and Claims v0.26.1
+		patchouli: Patchouli v1.21.1-93-NEOFORGE
+		pingwheel: Ping Wheel v1.12.1
+		placebo: Placebo v9.9.1
+		playeranimator: Player Animator v2.0.4+1.21.1
+		ponder: Ponder v1.0.81+mc1.21.1
+		presencefootsteps: Presence Footsteps (NeoForge) v1.21.1-1.12.0-beta.1
+		prickle: PrickleMC v21.1.11
+		pride: Pride Lib v1.2.4+1.21.1
+		productivebees: Productive Bees v1.21.1-13.13.3
+		productivelib: Productive Lib v1.21.1-0.2.0
+		reeses_sodium_options: Reese's Sodium Options v1.8.3+mc1.21.4
+		reliquary: Reliquary Reincarnations v2.0.66
+		searchables: Searchables v1.0.2
+		servercore: ServerCore v1.5.10+1.21.1
+		silentgear: Silent Gear v4.1.6.1
+		silentlib: Silent Lib v10.6.0
+		smarterfarmers: Smarter Farmers v1.21-2.2.4
+		sodium: Sodium v0.6.13+mc1.21.1
+		sodium_extra: Sodium Extra v0.6.0+mc1.21.1
+		solcarrot: Spice of Life: Carrot Edition v1.16.6
+		sophisticatedbackpacks: Sophisticated Backpacks v3.25.40
+		sophisticatedcore: Sophisticated Core v1.4.24
+		sound_physics_remastered: Sound Physics Remastered v1.21.1-1.5.1
+		spruceui: SpruceUI v6.2.5+1.21.1
+		subtle_effects: Subtle Effects v1.14.1
+		supplementaries: Supplementaries v1.21-3.5.34
+		terrablender: TerraBlender v4.1.0.8
+		titanium: Titanium v4.0.42
+		transition: TRansition v1.0.17
+		travelerstitles: Traveler's Titles v1.21.1-NeoForge-5.1.3
+		trender: TRender v1.0.12
+		visuality: Visuality: Reforged v2.1.0
+		wrench_wrapper: Wrench Wrapper v0.8.1
+		wrench_wrapper_backend: Wrench Wrapper (Backend) v0.8.1
+		xaerolib: XaeroLib v1.1.0
+		xaerominimap: Xaero's Minimap v25.3.10
+		xaerotrainmap: Xaero Train Map v1.0.0
+		xaeroworldmap: Xaero's World Map v1.40.11
+		yet_another_config_lib_v3: YetAnotherConfigLib v3.8.2+1.21.1-neoforge
+		yumi_mc_core: Yumi Minecraft Libraries: Foundation v1.0.0-beta.1+1.21.1
+		yungsapi: YUNG's API v1.21.1-NeoForge-5.1.6
+		yungscavebiomes: YUNG's Cave Biomes v1.21.1-NeoForge-3.1.1
+		yungsextras: YUNG's Extras v1.21.1-NeoForge-5.1.1
+	Sinytra Connector: 2.0.0-beta.14+1.21.1
+		SINYTRA CONNECTOR IS PRESENT!
+		Please verify issues are not caused by Connector before reporting them to mod authors. If you're unsure, file a report on Connector's issue tracker.
+		Connector's issue tracker can be found at https://github.com/Sinytra/Connector/issues.
+		Installed Fabric mods:
+		| ================================================== | ============================== | ============================== | ==================== |
+		| continuity-3.0.0+1.21.neoforge_mapped_moj_1.21.1.j | Continuity                     | continuity                     | 3.0.0_1.21.neoforge  |
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar connector_loader TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.11.0
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		AdvancedLootInfo-neoforge-1.21.1-1.9.0.jar        |AdvancedLootInfo              |ali                           |1.9.0               |Manifest: NOSIGNATURE
+		AmbientSounds_NEOFORGE_v6.3.3_mc1.21.1.jar        |AmbientSounds                 |ambientsounds                 |6.3.3               |Manifest: NOSIGNATURE
+		Apotheosis-1.21.1-8.5.2.jar                       |Apotheosis                    |apotheosis                    |8.5.2               |Manifest: NOSIGNATURE
+		ApothicAttributes-1.21.1-2.9.1.jar                |Apothic Attributes            |apothic_attributes            |2.9.1               |Manifest: NOSIGNATURE
+		ApothicEnchanting-1.21.1-1.5.2.jar                |Apothic Enchanting            |apothic_enchanting            |1.5.2               |Manifest: NOSIGNATURE
+		ApothicSpawners-1.21.1-1.3.4.jar                  |Apothic Spawners              |apothic_spawners              |1.3.4               |Manifest: NOSIGNATURE
+		appleskin-neoforge-mc1.21-3.0.9.jar               |AppleSkin                     |appleskin                     |3.0.9+mc1.21        |Manifest: NOSIGNATURE
+		appliedenergistics2-19.2.17.jar                   |Applied Energistics 2         |ae2                           |19.2.17             |Manifest: NOSIGNATURE
+		Applied-Mekanistics-1.6.3.jar                     |Applied Mekanistics           |appmek                        |1.6.3               |Manifest: NOSIGNATURE
+		Aquaculture-1.21.1-2.7.21.jar                     |Aquaculture 2                 |aquaculture                   |2.7.21              |Manifest: NOSIGNATURE
+		attributefix-neoforge-1.21.1-21.1.3.jar           |AttributeFix                  |attributefix                  |21.1.3              |Manifest: NOSIGNATURE
+		balm-neoforge-1.21.1-21.0.56.jar                  |Balm                          |balm                          |21.0.56             |Manifest: NOSIGNATURE
+		BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar       |Biomes O' Plenty              |biomesoplenty                 |21.1.0.13           |Manifest: NOSIGNATURE
+		bookshelf-neoforge-1.21.1-21.1.81.jar             |Bookshelf                     |bookshelf                     |21.1.81             |Manifest: NOSIGNATURE
+		buildinggadgets2-1.3.9.jar                        |Building Gadgets 2            |buildinggadgets2              |1.3.9               |Manifest: NOSIGNATURE
+		caelus-neoforge-7.0.1+1.21.1.jar                  |Caelus API                    |caelus                        |7.0.1+1.21.1        |Manifest: NOSIGNATURE
+		chefsdelight-1.0.5-neoforge-1.21.1.jar            |Chefs Delight                 |chefsdelight                  |1.0.5               |Manifest: NOSIGNATURE
+		cloth-config-15.0.140-neoforge.jar                |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		Clumps-neoforge-1.21.1-19.0.0.1.jar               |Clumps                        |clumps                        |19.0.0.1            |Manifest: NOSIGNATURE
+		connectivity-1.21.1-7.6.jar                       |Connectivity Mod              |connectivity                  |7.6                 |Manifest: NOSIGNATURE
+		continuity-3.0.0+1.21.neoforge_mapped_moj_1.21.1.j|Continuity                    |continuity                    |3.0.0_1.21.neoforge |Manifest: NOSIGNATURE
+		Controlling-neoforge-1.21.1-19.0.5.jar            |Controlling                   |controlling                   |19.0.5              |Manifest: NOSIGNATURE
+		cookingforblockheads-neoforge-1.21.1-21.1.20.jar  |Cooking for Blockheads        |cookingforblockheads          |21.1.20             |Manifest: NOSIGNATURE
+		Corgilib-NeoForge-1.21.1-5.0.0.9.jar              |CorgiLib                      |corgilib                      |5.0.0.9             |Manifest: NOSIGNATURE
+		create-1.21.1-6.0.9.jar                           |Create                        |create                        |6.0.9               |Manifest: NOSIGNATURE
+		createaddition-1.5.10.jar                         |Create Crafts & Additions     |createaddition                |1.5.10              |Manifest: NOSIGNATURE
+		create_jetpack-forge-5.1.2.jar                    |Create Jetpack                |create_jetpack                |5.1.2               |Manifest: NOSIGNATURE
+		CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar       |Create O' Plenty              |createoplenty                 |3.0                 |Manifest: NOSIGNATURE
+		create_train_fuel_config-0.1.0.jar                |Create Train Fuel Config      |create_train_fuel_config      |0.1.0               |Manifest: NOSIGNATURE
+		createappliedkinetics-1.5.4-1.21.1.jar            |Create: Applied Kinetics      |createappliedkinetics         |1.5.4-1.21.1        |Manifest: NOSIGNATURE
+		bellsandwhistles-0.4.7-1.21.1.jar                 |Create: Bells & Whistles      |bellsandwhistles              |0.4.7-1.21.1        |Manifest: NOSIGNATURE
+		interiors-1.21.1-neoforge-0.6.1.jar               |Create: Interiors             |interiors                     |0.6.1               |Manifest: NOSIGNATURE
+		createthreadedtrains-neoforge-1.21.1-1.0.0.jar    |Create: Threaded Trains       |createthreadedtrains          |1.0.0               |Manifest: NOSIGNATURE
+		CreativeCore_NEOFORGE_v2.13.36_mc1.21.1.jar       |CreativeCore                  |creativecore                  |2.13.36             |Manifest: NOSIGNATURE
+		Cucumber-1.21.1-8.0.15.jar                        |Cucumber Library              |cucumber                      |8.0.15              |Manifest: NOSIGNATURE
+		cupboard-1.21-3.5.jar                             |Cupboard mod                  |cupboard                      |3.5                 |Manifest: NOSIGNATURE
+		curios-neoforge-9.5.1+1.21.1.jar                  |Curios API                    |curios                        |9.5.1+1.21.1        |Manifest: NOSIGNATURE
+		DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar|Distant Horizons              |distanthorizons               |2.4.5-b             |Manifest: NOSIGNATURE
+		elytraslot-neoforge-9.0.2+1.21.1.jar              |Elytra Slot                   |elytraslot                    |9.0.2+1.21.1        |Manifest: NOSIGNATURE
+		emi-1.1.22+1.21.1+neoforge.jar                    |EMI                           |emi                           |1.1.22+1.21.1+neofor|Manifest: NOSIGNATURE
+		emi_enchanting-0.1.2+1.21+neoforge.jar            |EMI Enchanting                |emi_enchanting                |0.1.2+1.21+neoforge |Manifest: NOSIGNATURE
+		emi_loot-0.7.9+1.21+neoforge.jar                  |EMI Loot                      |emi_loot                      |0.7.9+1.21+neoforge |Manifest: NOSIGNATURE
+		emi_ores-1.2+1.21.1+neoforge.jar                  |EMI Ores                      |emi_ores                      |1.2+1.21.1+neoforge |Manifest: NOSIGNATURE
+		enchdesc-neoforge-1.21.1-21.1.9.jar               |EnchantmentDescriptions       |enchdesc                      |21.1.9              |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Actually Additions       |extra_mod_integrations_actuall|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Chipped                  |extra_mod_integrations_chipped|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Farmer's Delight         |extra_mod_integrations_farmers|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Iron's Spells 'n Spellboo|extra_mod_integrations_irons_s|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI PneumaticCraft           |extra_mod_integrations_pneumat|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Rechiseled               |extra_mod_integrations_rechise|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|ExMI Reliquary                |extra_mod_integrations_reliqua|1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		extra-mod-integrations-all-neoforge-1.0.3+1.21.1.j|Extra Mod Integrations        |extra_mod_integrations        |1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		com.kneelawk.extra-mod-integrations.extra-mod-inte|Extra Mod Integrations Core   |extra_mod_integrations_core   |1.0.3+1.21.1        |Manifest: NOSIGNATURE
+		fancymenu_neoforge_3.8.1_MC_1.21.1.jar            |FancyMenu                     |fancymenu                     |3.8.1               |Manifest: NOSIGNATURE
+		farmers-cutting-biomes-o-plenty-2.0.0.jar         |Farmer's Cutting: Biomes O' Pl|fcbop                         |2.0.0               |Manifest: NOSIGNATURE
+		farmers-cutting-oh-the-biomes-weve-gone-1.21.1-2.1|Farmer's Cutting: Oh The Biome|mr_farmers_cuttingohthebiomesw|1.21.1-2.1-neoforge |Manifest: NOSIGNATURE
+		FarmersDelight-1.21.1-1.2.11.jar                  |Farmer's Delight              |farmersdelight                |1.2.11              |Manifest: NOSIGNATURE
+		ferritecore-7.0.3-neoforge.jar                    |Ferrite Core                  |ferritecore                   |7.0.3               |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		flightlib-neoforge-3.2.1.jar                      |Flight Lib                    |flightlib                     |3.2.1               |Manifest: NOSIGNATURE
+		flywheel-neoforge-1.21.1-1.0.6.jar                |Flywheel                      |flywheel                      |1.0.6               |Manifest: NOSIGNATURE
+		forgified-fabric-api-0.116.7+2.2.4+1.21.1.jar     |Forgified Fabric API          |fabric_api                    |0.116.7+2.2.4+1.21.1|Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.71+c290471319.jar    |Forgified Fabric API Lookup AP|fabric_api_lookup_api_v1      |1.6.71+c290471319   |Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.31+1e62d33c19.jar        |Forgified Fabric Biome API (v1|fabric_biome_api_v1           |13.0.31+1e62d33c19  |Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.1.0+b0c22bb819.jar          |Forgified Fabric Block API (v1|fabric_block_api_v1           |1.1.0+b0c22bb819    |Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.52+c290471319.jar  |Forgified Fabric BlockRenderLa|fabric_blockrenderlayer_v1    |1.1.52+c290471319   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.11+e9036fd419.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.11+e9036fd419   |Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.15+e053909619.jar   |Forgified Fabric Client Tags  |fabric_client_tags_api_v1     |1.1.15+e053909619   |Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.28+36d727be19.jar       |Forgified Fabric Command API (|fabric_command_api_v2         |2.2.28+36d727be19   |Manifest: NOSIGNATURE
+		fabric-content-registries-v0-8.0.19+5e0d320019.jar|Forgified Fabric Content Regis|fabric_content_registries_v0  |8.0.19+5e0d320019   |Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-2.1.5+7f945d5b19.jar    |Forgified Fabric Convention Ta|fabric_convention_tags_v1     |2.1.5+7f945d5b19    |Manifest: NOSIGNATURE
+		fabric-convention-tags-v2-2.11.1+87e5848019.jar   |Forgified Fabric Convention Ta|fabric_convention_tags_v2     |2.11.1+87e5848019   |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.4.5+26d408aa19.jar|Forgified Fabric Data Attachme|fabric_data_attachment_api_v1 |1.4.5+26d408aa19    |Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-20.2.34+a4c3605619.j|Forgified Fabric Data Generati|fabric_data_generation_api_v1 |20.2.34+a4c3605619  |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.8.0+5ede667619.jar      |Forgified Fabric Entity Events|fabric_entity_events_v1       |1.8.0+5ede667619    |Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.7.13+86e0887119.jar|Forgified Fabric Events Intera|fabric_events_interaction_v0  |0.7.13+86e0887119   |Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.53+36d727be19.jar     |Forgified Fabric Game Rule API|fabric_game_rule_api_v1       |1.0.53+36d727be19   |Manifest: NOSIGNATURE
+		fabric-gametest-api-v1-2.0.5+29f188ce19.jar       |Forgified Fabric Game Test API|fabric_gametest_api_v1        |2.0.5+29f188ce19    |Manifest: NOSIGNATURE
+		fabric-item-api-v1-11.2.0+0c57911319.jar          |Forgified Fabric Item API (v1)|fabric_item_api_v1            |11.2.0+0c57911319   |Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.1.7+e324903319.jar     |Forgified Fabric Item Group AP|fabric_item_group_api_v1      |4.1.7+e324903319    |Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar   |Forgified Fabric Key Binding A|fabric_key_binding_api_v1     |1.0.47+62cc7ce119   |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.6.0+e40d8add19.jar   |Forgified Fabric Lifecycle Eve|fabric_lifecycle_events_v1    |2.6.0+e40d8add19    |Manifest: NOSIGNATURE
+		fabric-loot-api-v2-3.0.15+a3ee712d19.jar          |Forgified Fabric Loot API (v2)|fabric_loot_api_v2            |3.0.15+a3ee712d19   |Manifest: NOSIGNATURE
+		fabric-loot-api-v3-1.0.3+333dfad919.jar           |Forgified Fabric Loot API (v3)|fabric_loot_api_v3            |1.0.3+333dfad919    |Manifest: NOSIGNATURE
+		fabric-message-api-v1-6.0.14+6a754fce19.jar       |Forgified Fabric Message API (|fabric_message_api_v1         |6.0.14+6a754fce19   |Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-2.1.0+6e8f52c719.jar  |Forgified Fabric Model Loading|fabric_model_loading_api_v1   |2.1.0+6e8f52c719    |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-4.3.0+30a980d919.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |4.3.0+30a980d919    |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-15.2.1+cc242efd19.jar|Forgified Fabric Object Builde|fabric_object_builder_api_v1  |15.2.1+cc242efd19   |Manifest: NOSIGNATURE
+		fabric-particles-v1-4.0.2+824f924c19.jar          |Forgified Fabric Particles (v1|fabric_particles_v1           |4.0.2+824f924c19    |Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-5.0.15+59440bcc19.jar        |Forgified Fabric Recipe API (v|fabric_recipe_api_v1          |5.0.15+59440bcc19   |Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-5.3.1+f9aace1619.jar      |Forgified Fabric Registry Sync|fabric_registry_sync_v0       |5.3.1+f9aace1619    |Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.7.1+9125b6dc19.jar       |Forgified Fabric Renderer - In|fabric_renderer_indigo        |1.7.1+9125b6dc19    |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.1+9125b6dc19.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.1+9125b6dc19    |Manifest: NOSIGNATURE
+		fabric-rendering-v1-5.1.0+1a09bd5a19.jar          |Forgified Fabric Rendering (v1|fabric_rendering_v1           |5.1.0+1a09bd5a19    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.49+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.49+73761d2e19   |Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.1.6+a51883b219.jar   |Forgified Fabric Rendering Flu|fabric_rendering_fluids_v1    |3.1.6+a51883b219    |Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-4.3.0+5bdd099819|Forgified Fabric Resource Cond|fabric_resource_conditions_api|4.3.0+5bdd099819    |Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-1.3.1+4ea8954419.jar    |Forgified Fabric Resource Load|fabric_resource_loader_v0     |1.3.1+4ea8954419    |Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.25+0ae1214819.jar        |Forgified Fabric Screen API (v|fabric_screen_api_v1          |2.0.25+0ae1214819   |Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.90+8dbc56dd19.jar|Forgified Fabric Screen Handle|fabric_screen_handler_api_v1  |1.3.90+8dbc56dd19   |Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.23+10b84f8419.jar         |Forgified Fabric Sound API (v1|fabric_sound_api_v1           |1.0.23+10b84f8419   |Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-5.4.3+a25cb45619.jar       |Forgified Fabric Transfer API |fabric_transfer_api_v1        |5.4.3+a25cb45619    |Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-6.2.0+6c854b6|Forgified Fabric Transitive Ac|fabric_transitive_access_widen|6.2.0+6c854b6f19    |Manifest: NOSIGNATURE
+		fzzy_config-0.7.6+1.21+neoforge.jar               |Fzzy Config                   |fzzy_config                   |0.7.6+1.21+neoforge |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.8.4.jar                |GeckoLib 4                    |geckolib                      |4.8.4               |Manifest: NOSIGNATURE
+		GlitchCore-neoforge-1.21.1-2.1.0.0.jar            |GlitchCore                    |glitchcore                    |2.1.0.0             |Manifest: NOSIGNATURE
+		guideme-21.1.15.jar                               |GuideME                       |guideme                       |21.1.15             |Manifest: NOSIGNATURE
+		Incendium_1.21.x_v5.4.4.jar                       |Incendium                     |incendium                     |5.4.3               |Manifest: NOSIGNATURE
+		incendium_translation_fix_1.21.x_1.0.5.jar        |Incendium Translation Fix     |incendium_translation_fix     |1.0.5               |Manifest: NOSIGNATURE
+		InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar   |Inventory Profiles Next       |inventoryprofilesnext         |2.2.5               |Manifest: NOSIGNATURE
+		iris-neoforge-1.8.12+mc1.21.1.jar                 |Iris                          |iris                          |1.8.12-snapshot+mc1.|Manifest: NOSIGNATURE
+		Jade-1.21.1-NeoForge-15.10.5.jar                  |Jade                          |jade                          |15.10.5+neoforge    |Manifest: NOSIGNATURE
+		JadeAddons-1.21.1-NeoForge-6.1.0.jar              |Jade Addons                   |jadeaddons                    |6.1.0+neoforge      |Manifest: NOSIGNATURE
+		konkrete_neoforge_1.9.9_MC_1.21.jar               |Konkrete                      |konkrete                      |1.9.9               |Manifest: NOSIGNATURE
+		thedarkcolour.kffmod-5.11.0.jar                   |Kotlin For Forge              |kotlinforforge                |5.11.0              |Manifest: NOSIGNATURE
+		kuma-api-neoforge-21.0.7+1.21.jar                 |KumaAPI                       |kuma_api                      |21.0.7              |Manifest: NOSIGNATURE
+		lambdynamiclights-4.8.7+1.21.1.jar                |LambDynamicLights             |lambdynlights                 |4.8.7+1.21.1        |Manifest: NOSIGNATURE
+		lambdynamiclights-api-4.8.7+1.21.1-mojmap.jar     |LambDynamicLights (API)       |lambdynlights_api             |4.8.7+1.21.1        |Manifest: NOSIGNATURE
+		lambdynamiclights-4.8.7+1.21.1-neoforge.jar       |LambDynamicLights (Runtime)   |lambdynlights_runtime         |4.8.7+1.21.1        |Manifest: NOSIGNATURE
+		libIPN-neoforge-1.21.1-6.6.3.jar                  |libIPN                        |libipn                        |6.6.3               |Manifest: NOSIGNATURE
+		lithium-neoforge-0.15.3+mc1.21.1.jar              |Lithium                       |lithium                       |0.15.3+mc1.21.1     |Manifest: NOSIGNATURE
+		mcw-doors-1.1.5-mc1.21.1neoforge.jar              |Macaw's Doors                 |mcwdoors                      |1.1.5               |Manifest: NOSIGNATURE
+		mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar          |Macaw's Trapdoors             |mcwtrpdoors                   |1.1.5               |Manifest: NOSIGNATURE
+		Mekanism-1.21.1-10.7.19.85.jar                    |Mekanism                      |mekanism                      |10.7.19             |Manifest: NOSIGNATURE
+		MekanismAdditions-1.21.1-10.7.19.85.jar           |Mekanism: Additions           |mekanismadditions             |10.7.19             |Manifest: NOSIGNATURE
+		MekanismGenerators-1.21.1-10.7.19.85.jar          |Mekanism: Generators          |mekanismgenerators            |10.7.19             |Manifest: NOSIGNATURE
+		MekanismTools-1.21.1-10.7.19.85.jar               |Mekanism: Tools               |mekanismtools                 |10.7.19             |Manifest: NOSIGNATURE
+		melody_neoforge_1.0.10_MC_1.21.jar                |Melody                        |melody                        |1.0.10              |Manifest: NOSIGNATURE
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		moonlight-1.21-2.29.32-neoforge.jar               |Moonlight Lib                 |moonlight                     |1.21-2.29.32        |Manifest: NOSIGNATURE
+		MouseTweaks-neoforge-mc1.21-2.26.1.jar            |Mouse Tweaks                  |mousetweaks                   |2.26.1              |Manifest: NOSIGNATURE
+		MysticalAgradditions-1.21.1-8.0.13.jar            |Mystical Agradditions         |mysticalagradditions          |8.0.13              |Manifest: NOSIGNATURE
+		MysticalAgriculture-1.21.1-8.0.24.jar             |Mystical Agriculture          |mysticalagriculture           |8.0.24              |Manifest: NOSIGNATURE
+		NaturesCompass-1.21.1-3.4.0-neoforge.jar          |Nature's Compass              |naturescompass                |1.21.1-3.4.0-neoforg|Manifest: NOSIGNATURE
+		neoforge-21.1.224-universal.jar                   |NeoForge                      |neoforge                      |21.1.224            |Manifest: NOSIGNATURE
+		noisium-neoforge-2.7.0+mc1.21-1.21.1.jar          |Noisium                       |noisium                       |2.7.0+mc1.21-1.21.1 |Manifest: NOSIGNATURE
+		notenoughcrashes-neoforge-4.4.9+1.21.1.jar        |Not Enough Crashes            |notenoughcrashes              |4.4.9+1.21.1        |Manifest: NOSIGNATURE
+		notenoughanimations-neoforge-1.12.2-mc1.21.1.jar  |NotEnoughAnimations           |notenoughanimations           |1.12.2              |Manifest: NOSIGNATURE
+		Nullscape_1.21.x_v1.2.14.jar                      |Nullscape                     |nullscape                     |1.2.14              |Manifest: NOSIGNATURE
+		Oh-The-Biomes-Weve-Gone-NeoForge-2.5.5.jar        |Oh The Biomes We've Gone      |biomeswevegone                |2.5.5               |Manifest: NOSIGNATURE
+		Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.0.jar |Oh The Trees You'll Grow      |ohthetreesyoullgrow           |5.3.0               |Manifest: NOSIGNATURE
+		ok_zoomer-neo-10.0.0-beta.13.jar                  |Ok Zoomer                     |ok_zoomer                     |10.0.0-beta.13      |Manifest: NOSIGNATURE
+		open-parties-and-claims-neoforge-1.21.1-0.26.1.jar|Open Parties and Claims       |openpartiesandclaims          |0.26.1              |Manifest: NOSIGNATURE
+		Patchouli-1.21.1-93-NEOFORGE.jar                  |Patchouli                     |patchouli                     |1.21.1-93-NEOFORGE  |Manifest: NOSIGNATURE
+		Ping-Wheel-1.12.1-neoforge-1.21.1.jar             |Ping Wheel                    |pingwheel                     |1.12.1              |Manifest: NOSIGNATURE
+		Placebo-1.21.1-9.9.1.jar                          |Placebo                       |placebo                       |9.9.1               |Manifest: NOSIGNATURE
+		player-animation-lib-forge-2.0.4+1.21.1.jar       |Player Animator               |playeranimator                |2.0.4+1.21.1        |Manifest: NOSIGNATURE
+		ponder-neoforge-1.0.81+mc1.21.1.jar               |Ponder                        |ponder                        |1.0.81+mc1.21.1     |Manifest: NOSIGNATURE
+		PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForg|Presence Footsteps (NeoForge) |presencefootsteps             |1.21.1-1.12.0-beta.1|Manifest: NOSIGNATURE
+		prickle-neoforge-1.21.1-21.1.11.jar               |PrickleMC                     |prickle                       |21.1.11             |Manifest: NOSIGNATURE
+		pridelib-1.2.4+1.21.1-mojmap.jar                  |Pride Lib                     |pride                         |1.2.4+1.21.1        |Manifest: NOSIGNATURE
+		productivebees-1.21.1-13.13.3.jar                 |Productive Bees               |productivebees                |1.21.1-13.13.3      |Manifest: NOSIGNATURE
+		productivelib-1.21.1-0.2.0.jar                    |Productive Lib                |productivelib                 |1.21.1-0.2.0        |Manifest: NOSIGNATURE
+		reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar |Reese's Sodium Options        |reeses_sodium_options         |1.8.3+mc1.21.4      |Manifest: NOSIGNATURE
+		reliquary-1.21.1-2.0.66.1363.jar                  |Reliquary Reincarnations      |reliquary                     |2.0.66              |Manifest: NOSIGNATURE
+		Searchables-neoforge-1.21.1-1.0.2.jar             |Searchables                   |searchables                   |1.0.2               |Manifest: NOSIGNATURE
+		servercore-neoforge-1.5.10+1.21.1.jar             |ServerCore                    |servercore                    |1.5.10+1.21.1       |Manifest: NOSIGNATURE
+		silent-gear-1.21.1-neoforge-4.1.6.1.jar           |Silent Gear                   |silentgear                    |4.1.6.1             |Manifest: NOSIGNATURE
+		silent-lib-1.21.1-neoforge-10.6.0.jar             |Silent Lib                    |silentlib                     |10.6.0              |Manifest: NOSIGNATURE
+		org.sinytra.connector-2.0.0-beta.14+1.21.1-mod.jar|Sinytra Connector             |connector                     |2.0.0-beta.14+1.21.1|Manifest: NOSIGNATURE
+		smarterfarmers-1.21-2.2.4-neoforge.jar            |Smarter Farmers               |smarterfarmers                |1.21-2.2.4          |Manifest: NOSIGNATURE
+		sodium-neoforge-0.6.13+mc1.21.1.jar               |Sodium                        |sodium                        |0.6.13+mc1.21.1     |Manifest: NOSIGNATURE
+		sodium-extra-neoforge-0.6.0+mc1.21.1.jar          |Sodium Extra                  |sodium_extra                  |0.6.0+mc1.21.1      |Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.21.1-3.25.40.1677.jar    |Sophisticated Backpacks       |sophisticatedbackpacks        |3.25.40             |Manifest: NOSIGNATURE
+		sophisticatedcore-1.21.1-1.4.24.1680.jar          |Sophisticated Core            |sophisticatedcore             |1.4.24              |Manifest: NOSIGNATURE
+		sound-physics-remastered-neoforge-1.21.1-1.5.1.jar|Sound Physics Remastered      |sound_physics_remastered      |1.21.1-1.5.1        |Manifest: NOSIGNATURE
+		solcarrot-1.21.1-1.16.6.jar                       |Spice of Life: Carrot Edition |solcarrot                     |1.16.6              |Manifest: NOSIGNATURE
+		spruceui-6.2.5+1.21.1-mojmap.jar                  |SpruceUI                      |spruceui                      |6.2.5+1.21.1        |Manifest: NOSIGNATURE
+		SubtleEffects-neoforge-1.21.1-1.14.1.jar          |Subtle Effects                |subtle_effects                |1.14.1              |Manifest: NOSIGNATURE
+		supplementaries-1.21-3.5.34-neoforge.jar          |Supplementaries               |supplementaries               |1.21-3.5.34         |Manifest: NOSIGNATURE
+		TerraBlender-neoforge-1.21.1-4.1.0.8.jar          |TerraBlender                  |terrablender                  |4.1.0.8             |Manifest: NOSIGNATURE
+		titanium-1.21-4.0.42.jar                          |Titanium                      |titanium                      |4.0.42              |Manifest: NOSIGNATURE
+		TRansition-1.0.17-1.21.1-neoforge-SNAPSHOT.jar    |TRansition                    |transition                    |1.0.17              |Manifest: NOSIGNATURE
+		TravelersTitles-1.21.1-NeoForge-5.1.3.jar         |Traveler's Titles             |travelerstitles               |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		TRender-1.0.12-1.21.1-neoforge-SNAPSHOT.jar       |TRender                       |trender                       |1.0.12              |Manifest: NOSIGNATURE
+		visuality-forge-2.1.0.jar                         |Visuality: Reforged           |visuality                     |2.1.0               |Manifest: NOSIGNATURE
+		api_neoforge-0.8.1.jar                            |Wrench Wrapper                |wrench_wrapper                |0.8.1               |Manifest: NOSIGNATURE
+		impl-0.8.1.jar                                    |Wrench Wrapper (Backend)      |wrench_wrapper_backend        |0.8.1               |Manifest: NOSIGNATURE
+		xaerotrainmap-1.0.0.jar                           |Xaero Train Map               |xaerotrainmap                 |1.0.0               |Manifest: NOSIGNATURE
+		xaerominimap-neoforge-1.21.1-25.3.10.jar          |Xaero's Minimap               |xaerominimap                  |25.3.10             |Manifest: NOSIGNATURE
+		xaeroworldmap-neoforge-1.21.1-1.40.11.jar         |Xaero's World Map             |xaeroworldmap                 |1.40.11             |Manifest: NOSIGNATURE
+		xaerolib-neoforge-1.21.1-1.1.0.jar                |XaeroLib                      |xaerolib                      |1.1.0               |Manifest: NOSIGNATURE
+		yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.ja|YetAnotherConfigLib           |yet_another_config_lib_v3     |3.8.2+1.21.1-neoforg|Manifest: NOSIGNATURE
+		yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar |Yumi Minecraft Libraries: Foun|yumi_mc_core                  |1.0.0-beta.1+1.21.1 |Manifest: NOSIGNATURE
+		YungsApi-1.21.1-NeoForge-5.1.6.jar                |YUNG's API                    |yungsapi                      |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar|YUNG's Better Jungle Temples  |betterjungletemples           |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar   |YUNG's Better Mineshafts      |bettermineshafts              |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.|YUNG's Better Nether Fortresse|betterfortresses              |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.ja|YUNG's Better Ocean Monuments |betteroceanmonuments          |1.21.1-NeoForge-4.1.|Manifest: NOSIGNATURE
+		YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar  |YUNG's Better Strongholds     |betterstrongholds             |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar    |YUNG's Better Witch Huts      |betterwitchhuts               |1.21.1-NeoForge-4.1.|Manifest: NOSIGNATURE
+		YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar         |YUNG's Cave Biomes            |yungscavebiomes               |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		YungsExtras-1.21.1-NeoForge-5.1.1.jar             |YUNG's Extras                 |yungsextras                   |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+	Crash Report UUID: 503b6798-647d-4837-9276-aa68cc378e86
+	FML: 4.0.42
+	NeoForge: 21.1.224
+	Flywheel Backend: flywheel:indirect
+	Suspected Mods: Minecraft (minecraft), Connectivity Mod (connectivity)

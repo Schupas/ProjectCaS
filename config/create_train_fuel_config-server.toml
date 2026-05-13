@@ -1,0 +1,10 @@
+[trains]
+	#Fuel ticks consumed per train burnFuel() call.
+	#0 disables consumption while moving.
+	# Default: 1
+	# Range: 0 ~ 1000
+	fuelConsumptionPerCall = 20
+	#Multiplier applied to burn time gained from consumed fuel items.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	fuelValueMultiplier = 1.0

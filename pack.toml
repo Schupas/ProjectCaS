@@ -1,0 +1,11 @@
+name = "Project CaS"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "60b8aa2c406ec21eb5bb6c1fa6b59fd02c845d8afa2ba47f258c7a6b0c99ee50"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.228"
