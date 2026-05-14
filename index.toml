@@ -2308,6 +2308,10 @@ file = "patchouli_data.json"
 hash = "0d6f8bff5d59d58e2ddda36b742394251afe308cb8cf96fac6c6c06144e28a15"
 
 [[files]]
+file = "refresh-upload.cmd"
+hash = "d600f03fae5cd9c65e24e2504ed0d7547d835001e345407314226b2a2c2013c0"
+
+[[files]]
 file = "resourcepacks/Better Buttons UI! (1.0v).zip"
 hash = "29ad365ae132cf5c89383ab4d770518c6da4aef749c76b65dbe2b222356a65c9"
 
