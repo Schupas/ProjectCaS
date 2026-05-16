@@ -2335,29 +2335,21 @@ file = "servers.dat_old"
 hash = "b2c983bf383def8293dad2fabd94476986fbb315623b90335e62803f2382ab5a"
 
 [[files]]
-file = "shaderpacks/BSL_v10.1.1.zip"
-hash = "131ca6b56b100e60577ffdb0dd51bfab2ee6e334564eeee324e5422026891668"
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "f91c2ec79366b4607d93928a07c223cbaa4a2e18fe0c110e68a3fc064e69b65a"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.7.1.zip"
-hash = "5cbf4d99bc7ce4f0df5c15974d276e0949bf6974d48d88a77d5e307b0b9be8af"
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "844af68c07eac70b45bb488a7d9af2298cd6f2867d1ad33fd7abe94110dfedb1"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.7.1.zip.txt"
-hash = "65893a0d62aac99ca9b280ea0d62f47504095f2bcf92e0a36f8b0e5f653be133"
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "4186d52e3f4eadf4ba35098431dd9d209d3f2637b1c7abb5668894594cc88246"
+metafile = true
 
 [[files]]
-file = "shaderpacks/Solas Shader V3.5.zip"
-hash = "f576390b1761d8c9ae6b96e2a1456bd892557b8de81a48299ed11f5af5abee79"
-
-[[files]]
-file = "shaderpacks/Solas Shader V3.5.zip.txt"
-hash = "47d448c1a38e01b3cc7685f24483c5ed21b04edeae0343c88114b8175ef18db0"
-
-[[files]]
-file = "shaderpacks/photon_v1.2a.zip"
-hash = "a7134a10138f6e5fe523dafa23bd266ba2e53621ac65a5e23294fe9a125b9d73"
-
-[[files]]
-file = "shaderpacks/photon_v1.2a.zip.txt"
-hash = "e609949384953b8a9bf7e1d3ea3453e063d30e8d043f894330917deec247a5be"
+file = "shaderpacks/photon-shader.pw.toml"
+hash = "e9112a2da03f65451c8c949331d71b92546bbd75ff78eac554d27f6c41e1ba29"
+metafile = true

@@ -1,7 +1,0 @@
-#Thu Apr 16 21:58:27 CEST 2026
-LPV_CLOUDY_FOG=true
-SHADOW_ENTITIES=true
-VL_SAMPLES=12
-VOXEL_VOLUME_SIZE=256
-shadowDistance=512.0
-shadowMapResolution=4096
