@@ -2101,11 +2101,6 @@ hash = "41dac4cfe4b1e055cbaa5d26568b97987e5166af5873e954c125e0b969a265d8"
 metafile = true
 
 [[files]]
-file = "mods/reeses-sodium-options.pw.toml"
-hash = "09306b955060349986ccf6a6d2a67f1e019fa172a7dc690dd6007f81c966309a"
-metafile = true
-
-[[files]]
 file = "mods/reliquary-reincarnations.pw.toml"
 hash = "771d6cbffcfae39a269c029248886c6a8709f1b73980e7364d7e4a842a608d83"
 metafile = true
