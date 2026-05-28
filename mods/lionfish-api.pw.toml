@@ -1,6 +1,7 @@
 name = "Lionfish API"
-filename = "lionfishapi-2.7-fix-fix.jar"
+filename = "lionfishapi-2.8.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
