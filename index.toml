@@ -1952,7 +1952,7 @@ metafile = true
 
 [[files]]
 file = "mods/lionfish-api.pw.toml"
-hash = "a06a870fe2c1c947c9cbf0e20398941e8d7444b3bfdf8499409e34f73bd12dca"
+hash = "c61f3c7eebe1c76067188d1e35fb10c40969c68f0bcac355a56542d215b3aaa3"
 metafile = true
 
 [[files]]
@@ -2157,7 +2157,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "dc32f796f8b6f64bd984e2206302a34a52db7f9d66455ce67d0c272e3ea4b88d"
+hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
 metafile = true
 
 [[files]]
